@@ -1,5 +1,14 @@
-/*body {   place background image, margin, font-family, font-size, width and line-height*/
-
+body {
+    background-image: url(../images/fridge.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 940px;
+    line-height: 30px;
+    font-size: 14px;
+    
+    
+}
 
 header {
     text-align: center;
@@ -7,14 +16,15 @@ header {
 }
 
 #content {
-  /* might need text-align: center;*/
+ text-align: center;
 }
 
 #container {
-   /* margin: 16em auto;
-    width: 600px;
-    background-color: ??;
-    padding-left: 2em;
-    border-radius: 25px;
-    border: 2px; solid; black; */
+   margin: 20rem;
+   width: 540px;
+   background-color: lightgrey;
+   padding-left: 1.5rem;
+   border-radius: 25px;
+   border: 2px, solid, black;
 }
+
