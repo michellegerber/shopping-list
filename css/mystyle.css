@@ -28,3 +28,53 @@ header {
    border: 2px, solid, black;
 }
 
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+#instructions {
+    margin-bottom: 25px;
+}
+
+#instructions li { 
+    font-style: italic;
+}
+
+#list {
+  margin-top: 30px;
+  width: 400px;
+}
+
+#list a {
+    float: right;
+    text-decoration: none;
+    color: red;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#list input[type="checkbox"] {
+    margin: 0px 10px;
+}
+
+#list li {
+    line-height: 2;
+    border: 1px tan dotted;
+    background-color: lightyellow;
+}
+
+#list li:hover {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}   
