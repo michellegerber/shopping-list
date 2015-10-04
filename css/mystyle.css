@@ -1,0 +1,20 @@
+/*body {   place background image, margin, font-family, font-size, width and line-height*/
+
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+#content {
+  /* might need text-align: center;*/
+}
+
+#container {
+   /* margin: 16em auto;
+    width: 600px;
+    background-color: ??;
+    padding-left: 2em;
+    border-radius: 25px;
+    border: 2px; solid; black; */
+}
