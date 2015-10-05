@@ -11,7 +11,7 @@ $(document).ready(function() {
 		var itemName = listItem.find("span").text();
 		var message = "Are you sure you want to remove '" + itemName + "' from the list? You cannot undo this action.";
 		if(window.confirm(message)) {
-			listItem.remove();
+		listItem.remove();
 		}
 	});
 	$("#list").on("change", "input:checkbox",function () {
@@ -28,6 +28,8 @@ function addItem() {
 	var newItem = $("#newItemBox").val();
 	if(newItem.length === 0) {
 		alert("You must enter an item to be added.");
+		if(window.confirm(alert)) {
+			newItem.remove();
 	}
 
 	var listItem = createListItem(newItem);
