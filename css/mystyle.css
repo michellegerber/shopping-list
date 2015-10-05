@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-image: url(../images/fridge.jpg);
     background-size: cover;
@@ -7,6 +8,10 @@ body {
     line-height: 30px;
     font-size: 20px;
 }
+=======
+/*body {   place background image, margin, font-family, font-size, width and line-height*/
+
+>>>>>>> 1f945da6c3c2fef806401ab062a24afda44fa088
 
 header {
     text-align: center;
@@ -14,6 +19,7 @@ header {
 }
 
 #content {
+<<<<<<< HEAD
  text-align: center;
 }
 
@@ -79,3 +85,16 @@ h2 {
 .completed {
     text-decoration: line-through;
 }   
+=======
+  /* might need text-align: center;*/
+}
+
+#container {
+   /* margin: 16em auto;
+    width: 600px;
+    background-color: ??;
+    padding-left: 2em;
+    border-radius: 25px;
+    border: 2px; solid; black; */
+}
+>>>>>>> 1f945da6c3c2fef806401ab062a24afda44fa088
