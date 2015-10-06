@@ -22,25 +22,26 @@ $(document).ready(function() {
 		else
 			item.removeClass("completed"); 
 	});
-});
+    $("#list").sortable( {   
+		placeholder: "ui-sortable-placeholder" 
+     });  
+    });
 
-    function addItem() {
-	   var newItem = $("#newItemBox").val();
-	   if(newItem.length === 0) {
+function addItem() {
+	var newItem = $("#newItemBox").val();
+	if(newItem.length === 0) {
 		alert("You must enter an item to be added.");
-		if(window.confirm(alert)) {
-			newItem.remove();
-	}
-	}
+		return;
+    	}
 
 	var listItem = createListItem(newItem);
 	$("#list").append(listItem);
 	$("#newItemBox").val("");
-}
+        }
 
 function createListItem(newItem) {
-	var listItem = "<li><input type='checkbox'>"; 
+	var listItem = "<li class='ui-state-default'><input type='checkbox'>"; 
 	listItem += "<span>" + newItem + "</span>";
-	listItem += "<a href='#'>Remove</a></li>";
+	listItem += "<a href='#'>remove</a></li>";
 	return listItem; 
-}
+    }
