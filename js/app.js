@@ -24,12 +24,13 @@ $(document).ready(function() {
 	});
 });
 
-function addItem() {
-	var newItem = $("#newItemBox").val();
-	if(newItem.length === 0) {
+    function addItem() {
+	   var newItem = $("#newItemBox").val();
+	   if(newItem.length === 0) {
 		alert("You must enter an item to be added.");
 		if(window.confirm(alert)) {
 			newItem.remove();
+	}
 	}
 
 	var listItem = createListItem(newItem);
