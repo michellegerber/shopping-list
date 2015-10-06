@@ -6,6 +6,7 @@ $(document).ready(function() {
 			addItem();
 		}
 	});
+	
 	$("#list").on("click", "a", function() {
 		var listItem = $(this).closest("li");
 		var itemName = listItem.find("span").text();
@@ -14,6 +15,7 @@ $(document).ready(function() {
 		listItem.remove();
 		}
 	});
+	
 	$("#list").on("change", "input:checkbox",function () {
 		var item = $(this).closest("li").find("span");
 		if($(this).is(":checked")) {
@@ -22,6 +24,7 @@ $(document).ready(function() {
 		else
 			item.removeClass("completed"); 
 	});
+	
     $("#list").sortable( {   
 		placeholder: "ui-sortable-placeholder" 
      });  
@@ -33,12 +36,12 @@ function addItem() {
 		alert("You must enter an item to be added.");
 		return;
     	}
-
-	var listItem = createListItem(newItem);
+    	
+    var listItem = createListItem(newItem);
 	$("#list").append(listItem);
 	$("#newItemBox").val("");
         }
-
+        
 function createListItem(newItem) {
 	var listItem = "<li class='ui-state-default'><input type='checkbox'>"; 
 	listItem += "<span>" + newItem + "</span>";
